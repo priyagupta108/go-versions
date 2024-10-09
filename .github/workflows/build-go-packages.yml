@@ -1,6 +1,8 @@
 name: Generate Go package
 run-name: Generate Go ${{ inputs.VERSION || '1.19.0' }}
 on:
+  push:
+    branches: [ test-ubuntu24 ]
   workflow_dispatch:
     inputs:
       VERSION:
@@ -23,7 +25,7 @@ on:
 jobs:
   go:
     name: Go
-    uses: actions/versions-package-tools/.github/workflows/build-tool-packages.yml@main
+    uses: priyagupta108/versions-package-tools/.github/workflows/build-tool-packages.yml@ubuntu-24-test
     with:
       tool-name: "go"
       tool-version: ${{ inputs.VERSION || '1.19.0' }}
