@@ -1,6 +1,8 @@
 name: Generate Go package
 run-name: Generate Go ${{ inputs.VERSION || '1.19.0' }}
 on:
+  push:
+    branches: [ test-ubuntu24 ]
   workflow_dispatch:
     inputs:
       VERSION:

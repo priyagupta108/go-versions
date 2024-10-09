@@ -1,7 +1,8 @@
 name: Create Pull Request
 on:
   workflow_dispatch:
-
+  push:
+    branches: [ test-ubuntu24 ]
 jobs:
   create-pr:
     uses: priyagupta108/versions-package-tools/.github/workflows/create-pr-to-update-manifest.yml@ubuntu-24-test
