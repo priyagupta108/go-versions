@@ -8,13 +8,13 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
-      - main
+      - test-ubuntu24
     paths:
       - 'versions-manifest.json'
 
 jobs:
   manifest:
-    uses: actions/versions-package-tools/.github/workflows/validate-manifest.yml@main
+    uses: priyagupta108/versions-package-tools/.github/workflows/validate-manifest.yml@ubuntu-24-test
     with:
       tool-name: "Go"
       image-url: "https://go.dev/images/gopher-footer.jpg"
