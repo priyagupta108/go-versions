@@ -14,7 +14,7 @@ on:
 
 jobs:
   manifest:
-    uses: priyagupta108/versions-package-tools/.github/workflows/validate-manifest.yml@create_release
+    uses: priyagupta108/versions-package-tools/.github/workflows/validate-manifest.yml@create_release_test
     with:
       tool-name: "Go"
       image-url: "https://go.dev/images/gopher-footer.jpg"
