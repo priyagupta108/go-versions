@@ -6,7 +6,7 @@ on:
 
 jobs:
   get-new-go-versions:
-    uses: actions/versions-package-tools/.github/workflows/get-new-tool-versions.yml@main
+    uses: priyagupta108/versions-package-tools/.github/workflows/get-new-tool-versions.yml@create_release
     with:
       tool-name: "Go"
       image-url: "https://go.dev/images/gopher-footer.jpg"

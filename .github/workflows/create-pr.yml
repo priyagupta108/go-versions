@@ -4,7 +4,7 @@ on:
 
 jobs:
   create-pr:
-    uses: actions/versions-package-tools/.github/workflows/create-pr-to-update-manifest.yml@main
+    uses: priyagupta108/versions-package-tools/.github/workflows/create-pr-to-update-manifest.yml@create_release
     with:
       tool-name: "go"
     secrets: inherit
